@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 // Icons imports
 import {
@@ -7,6 +8,7 @@ import {
   CiMoneyBill,
   CiGlobe,
   CiCompass1,
+  CiMenuBurger,
 } from "react-icons/ci";
 import { PiBrainThin } from "react-icons/pi";
 import { GoStack } from "react-icons/go";
@@ -14,8 +16,8 @@ import { RxCardStack } from "react-icons/rx";
 import { title } from "process";
 
 const MainList = [
-  { title: "Discover", href: "/Categories/discover", icon: <CiCompass1 /> },
-  { title: "Libraries", href: "/Categories/libraries", icon: <RxCardStack /> },
+  { title: "Discover", href: "/", icon: <CiCompass1 /> },
+  { title: "Libraries", href: "/Libraries", icon: <RxCardStack /> },
 ];
 
 const CategoriesList = [
@@ -83,22 +85,50 @@ const Separator = ({ title }: SeparatorProps) => {
 };
 
 const LeftNavbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-    <nav className=" fixed left-0 top-0 w-80 bg-black text-white h-full border-r border-gray-400/20 ">
-      <div className="  px-6">
-        <h1 className="text-6xl font-semibold pt-10 select-none">
-          <a href="/">Toolfolio</a>
-        </h1>
+    <>
+      {/* Burger menu for small screen */}
+      <button
+        onClick={toggleMenu}
+        className="fixed top-4 left-4 z-50 lg:hidden bg-black p-2 rounded-md"
+      >
+        <CiMenuBurger className="text-white" size={24} />{" "}
+      </button>
 
-        <NavbarList itemList={MainList} />
+      {/* Navigation */}
+      <nav
+        className={`fixed left-0 top-0 w-80 bg-black text-white h-full border-r border-gray-400/20 transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+        } lg:translate-x-0 lg:block`}
+      >
+        <div className="px-6">
+          <h1 className="text-6xl font-semibold pt-10 select-none">
+            <a href="/">Toolfolio</a>
+          </h1>
 
-        <Separator title="Categories" />
+          <NavbarList itemList={MainList} />
 
-        <NavbarList itemList={CategoriesList} />
+          <Separator title="Categories" />
 
-        <Separator />
-      </div>
-    </nav>
+          <NavbarList itemList={CategoriesList} />
+
+          <Separator />
+        </div>
+      </nav>
+
+      {/* Overlay to close menu on small screen */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+          onClick={toggleMenu}
+        ></div>
+      )}
+    </>
   );
 };
 
