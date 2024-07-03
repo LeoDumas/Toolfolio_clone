@@ -17,28 +17,28 @@ import { title } from "process";
 
 const MainList = [
   { title: "Discover", href: "/", icon: <CiCompass1 /> },
-  { title: "Libraries", href: "/Libraries", icon: <RxCardStack /> },
+  { title: "Libraries", href: "/libraries", icon: <RxCardStack /> },
 ];
 
 const CategoriesList = [
-  { title: "Design", href: "/Categories/design", icon: <CiDesktop /> },
+  { title: "Design", href: "/categories/design", icon: <CiDesktop /> },
   {
     title: "YouTube",
-    href: "Categories/youtube",
+    href: "categories/youtube",
     icon: <CiYoutube />,
   },
-  { title: "Startups", href: "Categories/startups", icon: <CiMoneyBill /> },
+  { title: "Startups", href: "categories/startups", icon: <CiMoneyBill /> },
   {
     title: "Artificial Intelligence",
-    href: "Categories/artificial-intelligence",
+    href: "categories/artificial-intelligence",
     icon: <PiBrainThin />,
   },
   {
     title: "Social Media",
-    href: "Categories/social-media",
+    href: "categories/social-media",
     icon: <CiGlobe />,
   },
-  { title: "Websites", href: "Categories/websites", icon: <GoStack /> },
+  { title: "Websites", href: "categories/websites", icon: <GoStack /> },
 ];
 
 type NavItem = {

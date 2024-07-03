@@ -8,14 +8,14 @@ const appCards = [
     name: "Notion",
     description: "Note taking",
     url: "https://www.notion.so",
-    bgColor: "white",
+    bgColor: "bg-white",
   },
   {
     name: "TextSniper",
     description: "Text extraction",
     url: "https://textsniper.app/fr",
     format: "svg",
-    bgColor: "white",
+    bgColor: "bg-white",
   },
   {
     name: "Endless Tools",
@@ -49,15 +49,6 @@ const appCards = [
 ];
 
 export default function Home() {
-  const handleOpenSuggestion = () => {
-    console.log("Le bouton de suggestion est ouvert");
-    // Ajoutez ici la logique pour l'ouverture
-  };
-
-  const handleCloseSuggestion = () => {
-    console.log("Le bouton de suggestion est fermé");
-    // Ajoutez ici la logique pour la fermeture
-  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24  lg:pl-80 bg-black text-white">
       <LeftNavbar />

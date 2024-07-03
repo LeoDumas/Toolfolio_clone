@@ -27,9 +27,7 @@ const SimpleAppCard = ({
   return (
     <a href={url} className="flex">
       <div
-        className={`relative w-16 h-16 overflow-hidden rounded-md ${
-          bgColor && `bg-${bgColor}`
-        }`}
+        className={`relative w-16 h-16 overflow-hidden rounded-md ${bgColor}`}
       >
         <Image
           src={NameToImageUrl(name)}
