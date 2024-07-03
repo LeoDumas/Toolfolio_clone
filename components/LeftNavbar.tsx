@@ -13,7 +13,6 @@ import {
 import { PiBrainThin } from "react-icons/pi";
 import { GoStack } from "react-icons/go";
 import { RxCardStack } from "react-icons/rx";
-import { title } from "process";
 
 const MainList = [
   { title: "Discover", href: "/", icon: <CiCompass1 /> },
@@ -109,7 +108,7 @@ const LeftNavbar = () => {
       <nav
         className={`fixed left-0 top-0 w-80 bg-black text-white h-full border-r border-gray-400/20 transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:block z-50`} // Ajoutez z-50 ici
+        } lg:translate-x-0 lg:block z-50`}
       >
         <div className="px-6">
           <h1 className="text-6xl font-semibold pt-10 select-none">
