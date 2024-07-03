@@ -45,8 +45,8 @@ const LibraryGrid = () => {
   ];
 
   return (
-    <div className=" w-full px-24">
-      <div className="grid grid-cols-2 gap-4 ">
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {libraries.map((name) => (
           <LibraryCard key={name} name={name} />
         ))}

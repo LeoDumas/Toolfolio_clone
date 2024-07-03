@@ -90,6 +90,11 @@ const LeftNavbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const closeMenu = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      setIsMenuOpen(false);
+    }
+  };
   return (
     <>
       {/* Burger menu for small screen */}
@@ -104,7 +109,7 @@ const LeftNavbar = () => {
       <nav
         className={`fixed left-0 top-0 w-80 bg-black text-white h-full border-r border-gray-400/20 transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:block`}
+        } lg:translate-x-0 lg:block z-50`} // Ajoutez z-50 ici
       >
         <div className="px-6">
           <h1 className="text-6xl font-semibold pt-10 select-none">
@@ -125,7 +130,7 @@ const LeftNavbar = () => {
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
-          onClick={toggleMenu}
+          onClick={closeMenu}
         ></div>
       )}
     </>
