@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Separator from "./ui/Separator";
+import Link from "next/link";
 
 // Icons imports
 import {
@@ -23,21 +25,21 @@ const CategoriesList = [
   { title: "Design", href: "/categories/design", icon: <CiDesktop /> },
   {
     title: "YouTube",
-    href: "categories/youtube",
+    href: "/categories/youtube",
     icon: <CiYoutube />,
   },
-  { title: "Startups", href: "categories/startups", icon: <CiMoneyBill /> },
+  { title: "Startups", href: "/categories/startups", icon: <CiMoneyBill /> },
   {
     title: "Artificial Intelligence",
-    href: "categories/artificial-intelligence",
+    href: "/categories/artificial-intelligence",
     icon: <PiBrainThin />,
   },
   {
     title: "Social Media",
-    href: "categories/social-media",
+    href: "/categories/social-media",
     icon: <CiGlobe />,
   },
-  { title: "Websites", href: "categories/websites", icon: <GoStack /> },
+  { title: "Websites", href: "/categories/websites", icon: <GoStack /> },
 ];
 
 type NavItem = {
@@ -55,31 +57,16 @@ const NavbarList = ({ itemList }: NavbarListProps) => {
     <ul className="mt-5 select-none">
       {itemList.map((item) => (
         <li key={item.title} className="text-lg w-full">
-          <a
+          <Link
             href={item.href}
             className="w-full flex items-center px-2 py-2 gap-x-3 hover:bg-gray-200/10 rounded-md transition-colors duration-200"
           >
             {item.icon}
             {item.title}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
-  );
-};
-
-type SeparatorProps = {
-  title?: string;
-};
-
-const Separator = ({ title }: SeparatorProps) => {
-  return (
-    <div className="relative flex mt-5 items-center">
-      {title && (
-        <span className="flex-shrink mr-4 text-white text-xs">{title}</span>
-      )}
-      <div className="flex-grow border-t border-gray-400/20"></div>
-    </div>
   );
 };
 

@@ -1,0 +1,56 @@
+[
+    {
+      "name": "Notion",
+      "description": "Note taking",
+      "url": "https://www.notion.so",
+      "bgColor": "bg-white",
+      "categorie": ["youtube", "startups", "artificial-intelligence"]
+    },
+    {
+      "name": "TextSniper",
+      "description": "Text extraction",
+      "url": "https://textsniper.app/fr",
+      "format": "svg",
+      "bgColor": "bg-white",
+      "categorie": ["design", "youtube", "social-media"]
+    },
+    {
+      "name": "Endless Tools",
+      "description": "3d design",
+      "url": "https://endlesstools.io/",
+      "format": "jpg",
+      "categorie": ["design", "youtube", "social-media", "websites"]
+    },
+    {
+      "name": "TypeFully",
+      "description": "Social media tools",
+      "url": "https://typefully.com/",
+      "format": "jpg",
+      "categorie": ["social-media"]
+    },
+    {
+      "name": "ElevenLabs",
+      "description": "Voice ai",
+      "url": "https://elevenlabs.io/",
+      "categorie": ["youtube", "startups", "artificial-intelligence"]
+    },
+    {
+      "name": "Relume",
+      "description": "UI/UX Tool",
+      "url": "https://www.relume.io/",
+      "format": "jpg",
+      "categorie": ["youtube", "startups", "social-media", "artificial-intelligence"]
+    },
+    {
+      "name": "Shots",
+      "description": "Design tool",
+      "url": "https://shots.so/",
+      "categorie": ["design", "websites", "social-media"]
+    },
+    {
+      "name": "CompressX",
+      "description": "Compression tool",
+      "url": "https://compressx.app/",
+      "categorie": ["websites", "design"]
+    }
+]
