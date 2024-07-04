@@ -3,6 +3,8 @@
       "name": "Notion",
       "description": "Note taking",
       "url": "https://www.notion.so",
+      "usage" : "Upgrade your note taking",
+      "type" : "free & paid",
       "bgColor": "bg-white",
       "categorie": ["youtube", "startups", "artificial-intelligence"]
     },
@@ -10,6 +12,8 @@
       "name": "TextSniper",
       "description": "Text extraction",
       "url": "https://textsniper.app/fr",
+      "usage" : "Extract text from photo or video",
+      "type" : "paid",
       "format": "svg",
       "bgColor": "bg-white",
       "categorie": ["design", "youtube", "social-media"]
@@ -18,6 +22,8 @@
       "name": "Endless Tools",
       "description": "3d design",
       "url": "https://endlesstools.io/",
+      "usage" : "Create 3D Objects and Spaces",
+      "type" : "free",
       "format": "jpg",
       "categorie": ["design", "youtube", "social-media", "websites"]
     },
@@ -25,6 +31,8 @@
       "name": "TypeFully",
       "description": "Social media tools",
       "url": "https://typefully.com/",
+      "usage" : "Make twitter/x thread easier",
+      "type" : "free & paid",
       "format": "jpg",
       "categorie": ["social-media"]
     },
@@ -32,12 +40,16 @@
       "name": "ElevenLabs",
       "description": "Voice ai",
       "url": "https://elevenlabs.io/",
+      "usage" : "Generate voice with ai",
+      "type" : "free & paid",
       "categorie": ["youtube", "startups", "artificial-intelligence"]
     },
     {
       "name": "Relume",
       "description": "UI/UX Tool",
       "url": "https://www.relume.io/",
+      "usage" : "Create responsive website faster",
+      "type" : "free & paid",
       "format": "jpg",
       "categorie": ["youtube", "startups", "social-media", "artificial-intelligence"]
     },
@@ -45,12 +57,16 @@
       "name": "Shots",
       "description": "Design tool",
       "url": "https://shots.so/",
+      "usage" : "Create high quality mockups",
+      "type" : "free",
       "categorie": ["design", "websites", "social-media"]
     },
     {
       "name": "CompressX",
       "description": "Compression tool",
       "url": "https://compressx.app/",
+      "usage" : "Compress photo and video",
+      "type" : "paid",
       "categorie": ["websites", "design"]
     }
 ]
